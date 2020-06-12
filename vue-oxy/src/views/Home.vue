@@ -148,7 +148,7 @@ methods: {
 
     }else if (this.count === 27) {
         this.game.img = 'nature/nature-vive-les-cailloux.gif'
-        this.game.txt = '. . .'
+        this.game.txt = 'L’endroit est paisible.'
 
     }else if (this.count === 28) {
         this.game.img = 'nature/nature-to-city.gif'
@@ -156,11 +156,11 @@ methods: {
 
     }else if (this.count === 29) {
         this.game.img = 'nature/the-tree.png'
-        this.game.txt = 'Vous voilà face à un arbre bien particulier.'
+        this.game.txt = 'Cet arbre est particulier.'
 
     }else if (this.count === 30) {
         this.game.img = 'nature/the-tree-2.png'
-        this.game.txt = '*prélever un fruit*'
+        this.game.txt = '*cueillir ?*'
 
     }else if (this.count === 31) {
         this.game.img = 'nature/the-tree-3.png'
@@ -222,7 +222,7 @@ methods: {
 
     }else if (this.count === 45) {
         this.game.img = 'metropole/void3.gif'
-        this.game.txt = 'Tant d’humains concentrés dans un espace si réduit. Tous les jours se ressemblent. Toutes les semaines la même routine. On perd notre vie à la gagner. Cette spirale infernale, la pyramide sociale. Ici, c’est de pire en pire. Un monde tombé dans l’indécence, plein de questions sans réponses'
+        this.game.txt = 'Tant d’humains concentrés dans un espace si réduit. Tous les jours se ressemblent. Toutes les semaines la même routine. On perd notre vie à la gagner. Cette spirale infernale, la pyramide sociale. Ici, c’est de pire en pire. Un monde tombé dans l’indécence, plein de questions sans réponses.'
 
     }else if (this.count === 46) {
         this.game.img = 'metropole/void4.gif'
@@ -234,7 +234,7 @@ methods: {
 
     }else if (this.count === 48) {
         this.game.img = 'metropole/why.gif'
-        this.game.txt = 'Pourquoi... Acceptons-nous juste les choses ?'
+        this.game.txt = '. . .'
 
     }else if (this.count === 49) {
         this.game.img = 'metropole/boom.png'
@@ -274,16 +274,19 @@ methods: {
 
     }else if (this.count === 58) {
           this.game.img = 'metropole/look.gif'
-          this.game.txt = '. . .'
+          this.game.txt = 'Prends ton temps.'
 
     }else if (this.count === 59) {
           this.game.img = 'metropole/clé.png'
-          this.game.txt = '. . .'
+          this.game.txt = '*prendre la clé*'
 
     }else if (this.count === 60) {
           this.game.img = 'metropole/clé2.png'
           this.game.txt = '. . .'
 
+    }else if (this.count === 61) {
+          this.game.img = 'metropole/the-end-mothefucka.gif'
+          this.game.txt = '. . . entre.'
 
 
 
