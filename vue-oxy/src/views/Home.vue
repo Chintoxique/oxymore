@@ -222,7 +222,7 @@ methods: {
 
     }else if (this.count === 45) {
         this.game.img = 'metropole/void3.gif'
-        this.game.txt = 'Tant d’humains concentrés dans un espace si réduit. Tous les jours se ressemblent. Toutes les semaines la même routine.'
+        this.game.txt = 'Tant d’humains concentrés dans un espace si réduit. Tous les jours se ressemblent. Toutes les semaines la même routine. On perd notre vie à la gagner. Cette spirale infernale, la pyramide sociale. Ici, c’est de pire en pire. Un monde tombé dans l’indécence, plein de questions sans réponses'
 
     }else if (this.count === 46) {
         this.game.img = 'metropole/void4.gif'
