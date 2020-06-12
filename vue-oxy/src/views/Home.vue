@@ -1,11 +1,13 @@
 <template>
   <div class="home">
-    <div class="w-full h-full p-5">
-      <p class="text-center">{{game.img}}</p>
+    <div class="p-5">
+      <img :src="require('../assets/'+game.img)" class="mx-auto w-8/12" alt="">
     </div>
-    <div @click="clicker" class="w-full h-full py-6 px-16 ">
-      <p>{{game.txt}}</p><p @click="count = 5" v-if="count === 2">NO</p>
+    <div @click="clicker" class="w-full h-full py-6 px-16 cursor-pointer">
+      <p class="text-center" v-html="game.txt"></p><p @click="count = 100" v-if="count === 100">NO</p>
     </div>
+      <p @click="backclicker">back</p>
+      <vue-typer class="" :text="game.txt" :repeat='0'></vue-typer>
   </div>
 </template>
 
@@ -16,16 +18,19 @@
 export default {
   name: "Home",
   components: {
-  //  HelloWorld
+
+},
+mounted() {
+  this.refresh();
 },
 data() {
   return {
     game : {
-      img : 'MENU IMG',
+      img : 'logo.png',
       txt : 'START',
       music : ''
     },
-    count : 0,
+    count : 1,
   }
 },
 methods: {
@@ -33,36 +38,182 @@ methods: {
     this.count ++
     this.refresh()
   },
+  backclicker() {
+    this.count --
+    this.refresh()
+  },
   refresh() {
     if (this.count === 1) {
-      this.game.img = 'ARCHIVES'
-      this.game.txt = 'TEXT 1'
+      this.game.img = 'archives/bougie.png'
+      this.game.txt = '<span class="text-red-500">Allume \n la bougie.</span>'
       this.game.music = 'feu'
     } else if (this.count === 2) {
-      this.game.img = 'PORTE'
-      this.game.txt = 'YES'
+      this.game.img = 'archives/bougie-a.png'
+      this.game.txt = '. . .'
     } else if (this.count === 3) {
-      this.game.img = 'NATURE'
-      this.game.txt = 'TEXT 3'
+      this.game.img = 'archives/3.gif'
+      this.game.txt = 'La lueur du feu éclaire les murs de la pièce...'
       this.game.music = 'ost'
     } else if (this.count === 4) {
-      this.game.img = 'FLEUR'
-      this.game.txt = 'TEXT 3'
+      this.game.img = 'archives/4-ARCHIVES.png'
+      this.game.txt = '. . .'
     } else if (this.count === 5) {
-      this.game.img = 'MASQUE'
-      this.game.txt = 'TEXT 3'
+      this.game.img = 'archives/6.gif'
+      this.game.txt = "La chance est dans l’oeil de celui qui le regarde. <br>Elle n’est que l’admiration du hasard."
     } else if (this.count === 6) {
-      this.game.img = 'METROPOLIS'
-      this.game.txt = 'TEXT 3'
+      this.game.img = 'archives/77.gif'
+      this.game.txt = 'L’observation de la nature,'
       this.game.music = 'violence'
     } else if (this.count === 7) {
-      this.game.img = 'CONSERVE'
-      this.game.txt = 'TEXT 3'
-    } else {
-      this.game.img = 'END'
-      this.game.txt = 'END'
+      this.game.img = 'archives/78.png'
+      this.game.txt = 'La perception des choses qui nous entoure et de la valeur de ceux-ci...'
+    } else if (this.count === 8) {
+      this.game.img = 'archives/88.png'
+      this.game.txt = "De l’infiniment petit"
+
+    } else if (this.count === 9) {
+        this.game.img = 'archives/99.gif'
+        this.game.txt = 'À la biosphère.'
+
+    } else if (this.count === 10) {
+        this.game.img = 'archives/10.gif'
+        this.game.txt = 'A amené de l’intérêt envers la vie.'
+
+    } else if (this.count === 11) {
+        this.game.img = 'archives/globglob.png'
+        this.game.txt = '. . .'
+
+    } else if (this.count === 12) {
+        this.game.img = 'archives/globglob12.png'
+        this.game.txt = 'Pendant longtemps,'
+
+    } else if (this.count === 13) {
+        this.game.img = 'archives/os.png'
+        this.game.txt = 'Et longtemps...'
+
+    } else if (this.count === 14) {
+        this.game.img = 'archives/nain.png'
+        this.game.txt = 'On est resté enfermé'
+
+    } else if (this.count === 15) {
+        this.game.img = 'archives/valise.png'
+        this.game.txt = 'La poussière s’est empilée sur nos meubles.'
+
+    } else if (this.count === 16) {
+        this.game.img = 'archives/ptnnn.png'
+        this.game.txt = 'Quelque part, la vie reprend ses droits.'
+
+    } else if (this.count === 17) {
+        this.game.img = 'archives/TELEVISIE.png'
+        this.game.txt = '. . .'
+
+
+    } else if (this.count === 18) {
+        this.game.img = 'archives/AH.png'
+        this.game.txt = '<span class="text-red-500 font-bold">Ah.</span>'
+
+    } else if (this.count === 19) {
+        this.game.img = 'archives/you-stepped.png'
+        this.game.txt = 'Il semblerait que vous ayez marché sur quelque chose.'
+
+    } else if (this.count === 20) {
+        this.game.img = 'archives/DOORGIF2.gif'
+        this.game.txt = 'Devant vous, se tient une porte.'
+
+
+    }else if (this.count === 21) {
+        this.game.img = 'archives/DOORGIF.gif'
+        this.game.txt = 'Ouvrir la porte (oui)'
+
+
+    } else if (this.count === 22) {
+        this.game.img = 'nature/1-chemin.png'
+        this.game.txt = 'Vous êtes sorti dehors.'
+
+    } else if (this.count === 23) {
+        this.game.img = 'nature/1.gif'
+        this.game.txt = 'La lumière est si dense dehors.'
+
+    }else if (this.count === 24) {
+        this.game.img = 'nature/herb-and-trees.gif'
+        this.game.txt = 'L’atmosphère est si douce,'
+
+    }else if (this.count === 25) {
+        this.game.img = 'nature/rainbow.gif'
+        this.game.txt = 'Le temps semble s’être arrêté.'
+
+    }else if (this.count === 26) {
+        this.game.img = 'nature/cheminn.png'
+        this.game.txt = 'Vous apercevez un petit chemin.'
+
+    }else if (this.count === 27) {
+        this.game.img = 'nature/nature-vive-les-cailloux.gif'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 28) {
+        this.game.img = 'nature/nature-to-city.gif'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 29) {
+        this.game.img = 'nature/the-tree.png'
+        this.game.txt = 'Vous voilà face à un arbre bien particulier.'
+
+    }else if (this.count === 30) {
+        this.game.img = 'nature/the-tree-2.png'
+        this.game.txt = '*prélever un fruit*'
+
+    }else if (this.count === 31) {
+        this.game.img = 'nature/the-tree-3.png'
+        this.game.txt = 'Garde le précieusement.<br> Ce fruit n’est pas comme les autres.'
+
+
+    }else if (this.count === 32) {
+        this.game.img = 'nature/rain.png'
+        this.game.txt = '. . . Il semblerait que la nuit commence à tomber.'
+
+    }else if (this.count === 33) {
+        this.game.img = 'nature/paintt.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 34) {
+        this.game.img = 'nature/amen.gif'
+        this.game.txt = 'Il y aurait peut-être moyen de s’abriter là-dedans...?'
+
+
+    }else if (this.count === 35) {
+        this.game.img = 'nature/rouille.png'
+        this.game.txt = 'Où suis-je ?'
+
+    }else if (this.count === 36) {
+        this.game.img = 'nature/trous2.png'
+        this.game.txt = 'Ce passage mène à un endroit...'
+
+    }else if (this.count === 37) {
+        this.game.img = 'nature/trous.gif'
+        this.game.txt = 'Mais... ?'
+
+    }else if (this.count === 38) {
+        this.game.img = 'nature/vie-et-mort.png'
+        this.game.txt = '. . .'
+
+
+
+
+
+          }else {
+        this.game.img = 'logo.png'
+        this.game.txt = 'END'
     }
   }
 }
 };
 </script>
+<style lang="scss">
+.vue-typer {
+  
+}
+
+.vue-typer .custom.char {
+  color: white;
+}
+</style>
