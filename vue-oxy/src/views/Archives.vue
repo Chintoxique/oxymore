@@ -80,7 +80,37 @@
                 "Mieux vaut allumer une chandelle que de maudire l’obscurité.",
                 "Philosophie des Lumières",
                 "L’astrolabe.",
-          
+                "Lumière<br>Clarté<br>Brilliant<br>Aveuglant<br>Brûler<br>Flamme<br>Lueur<br>Savoir<br>Lampe<br>Phare<br>Rayon<br>Vérité<br>Etincelle<br>Aurore<br>Jour<br>Énigmatique<br>Conscient<br>Doux<br>Innocence",
+                "Vertus et vices.",
+                "Lucide<br>Perçant<br>ÉveillévAiguisé<br>Perspicace<br>Spirituel<br>Ouvert<br>Esprit<br>Abstrait<br>Symbolique<br>Fictif<br>Imaginaire<br>Collectif<br>Masse<br>Individu<br>Absurde<br>Idéal<br>Faux<br>Utopie<br>Fatalité",
+                "Être : fatale abstraction.<br>Regarde autour de toi, comment le monde est beau. Non.<br>Comme ça vit. Comme ça meurt.<br>Être à se quitter. C’est ainsi que nous sommes.<br>Des dieux immobiles nous regardent périr, nous les fixons décédés.<br>C’est ainsi que les hautes ombres nous nomment : êtres.",
+                "Oeil<br>Réflexion<br>Vision<br>Perception<br>Regard<br>Observation<br>Conception<br>Rêve<br>Vue<br>Illusion<br>Pupille<br>Iris<br>Rétine<br>Nerf optique<br>Cornée<br>Lumière<br>Flou",
+                "Tout est; rien n’est.<br>L’une et l’autre formule aportent une égale sérénité.<br>L’anxieux, pour son malheur, reste entre les deux.<br>Toujours à la merci d’une nuance<br>Incapable de s’établir dans la sécurité de l’être ou de l’absence d'être.<br>(De l'inconvénient d'être né, Cioran.)",
+                "Culture de l'immanence.",
+                "Le vide, le plein <br>Fallait trouver un entre-deux <br>Entre 2 mondes <br>Bourré de fautes <br>Écrire pour combler <br>Les feuilles se noircissent... <br>Apprendre à être meilleur <br>Tu écris ton histoire <br>Produire pour mourir <br>Mourir en produit <br>Se mentir, mentir aux autres <br>Décider de ne pas choisir <br>Egoïsme ? <br>Lâcheté ? <br>L’altruisme se cultive <br>Creusant l’angoisse <br>Il y a de l’espoir ",
+                "Clairvoyance.",
+                "Comment savoir si on a le contrôle ? (Mr Robot)",
+                "Si la haine répond à la haine, comment la haine finira-t-elle ?",
+                "Vacuité",
+                "Calme<br>Confinement<br>Bien-être<br>Mal-être<br>Enfermé<br>Prison<br>Territoire<br>Dispute<br>Colère<br>Excitation<br>Cause<br>Chaine<br>Répercussion",
+                "Inévitable<br>Humain<br>Caractère<br>Sentiment<br>Juste<br>Injuste<br>Notion morale<br>Engendrement<br>Entrainement<br>Ressentir<br>Réfléchir<br>Agir<br>Abstinence",
+                "Écrire pour combler, écrire sans dire. Tuer le temps.",
+                "Ris, et tout le monde rira avec toi.<br>Pleure, et tu seras tout seul à pleurer",
+                "L’espace d’une vie est le même, qu’on le passe en chantant ou en pleurant.",
+                "Tempête interne<br>Le brouillard se lève<br>Flou<br>Déstabilisant<br>Pensées nébuleuses<br>Des étoiles éclatantes<br>La lumière me tranche les yeux<br>Vision trouble<br>Rêve<br>Réveille-toi<br>Réveille-toi<br>Réveille-toi<br>Le vent arrache les mots<br>La pluie me glace le sang<br>Veines<br>La fenêtre est ouverte<br>Mains froides<br>Mes larmes inondent ma chambre<br>Je hurle au vent<br>La crise passe",
+                "Compréhension<br>Fondamental<br>Harmonie<br>Palette<br>Infini<br>Couleurs<br>Conception<br>Mélasse<br>Réalité<br>Absorption<br>Psychique<br>Fiction<br>Esprit<br>Illusion<br>Interprétation<br>A priori",
+                "Écoute et apprends.",
+                "Onirique<br>Irréel<br>Univers<br>Dimension<br>Perspective<br>Subjectif<br>Question<br>Personne<br>Lieu<br>Etablir<br>Fleur<br>Eclat<br>Ecume<br>Mélancolie<br>Nuage<br>Tempête",
+                "Neurasthénie.",
+                //liste centrée ? par 3 colonnes aaa
+                "pluie<br>Chute	Déluge	Averse<br>Bombe	Eau	Feu<br>Brouillard	Saturation	Buée<br>Ombre	Ténèbres	Erreur",
+                "Rouge<br>Rubis<br>Écarlate<br>Bordeaux<br>Flamboyant<br>Feu<br>Empourpré<br>Honte<br>Boyaux<br>Vermeil<br>Veine<br>Âme<br>Organe<br>Brulant<br>Muqueuse<br>Hémoglobine<br>Désir<br>Colère",
+                "Monstre<br>Abominable<br>Ecoeuran<br>tRepoussant<br>Démon<br>Damné<br>Rejet<br>Laideur<br>Dérangeant<br>Malheureux<br>Différent<br>Dangereux<br>Mal<br>Inhumain<br>Mauvais",
+                "L’égarement peut mener à la perte de soi-même.<br>Les idées qui pourrissent les pensées maintiennent les doutes.",
+
+
+
+
 
 
               ],

@@ -73,7 +73,7 @@ methods: {
 
     } else if (this.count === 9) {
         this.game.img = 'archives/99.gif'
-        this.game.txt = 'À la biosphère.'
+        this.game.txt = 'À la biosphère'
 
     } else if (this.count === 10) {
         this.game.img = 'archives/10.gif'
@@ -196,6 +196,94 @@ methods: {
         this.game.img = 'nature/vie-et-mort.png'
         this.game.txt = '. . .'
 
+    }else if (this.count === 39) {
+        this.game.img = 'metropole/cat3.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 40) {
+        this.game.img = 'metropole/cat2.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 41) {
+        this.game.img = 'metropole/cat4.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 42) {
+        this.game.img = 'metropole/metropole.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 43) {
+        this.game.img = 'metropole/void1.gif'
+        this.game.txt = 'Gris... Le monde est si gris...'
+
+    }else if (this.count === 44) {
+        this.game.img = 'metropole/void2.gif'
+        this.game.txt = 'Si bruyant et pollué. On en mourrait d’asphyxie.'
+
+    }else if (this.count === 45) {
+        this.game.img = 'metropole/void3.gif'
+        this.game.txt = 'Tant d’humains concentrés dans un espace si réduit. Tous les jours se ressemblent. Toutes les semaines la même routine.'
+
+    }else if (this.count === 46) {
+        this.game.img = 'metropole/void4.gif'
+        this.game.txt = 'Comment arrêter le temps ?'
+
+    }else if (this.count === 47) {
+        this.game.img = 'metropole/void44.gif'
+        this.game.txt = 'Tout cela est imaginaire.'
+
+    }else if (this.count === 48) {
+        this.game.img = 'metropole/why.gif'
+        this.game.txt = 'Pourquoi... Acceptons-nous juste les choses ?'
+
+    }else if (this.count === 49) {
+        this.game.img = 'metropole/boom.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 50) {
+        this.game.img = 'metropole/cat5.png'
+        this.game.txt = 'Pourquoi... Acceptons-nous juste les choses ?'
+
+    }else if (this.count === 51) {
+        this.game.img = 'metropole/antenna.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 52) {
+        this.game.img = 'metropole/mask.png'
+        this.game.txt = 'Veux-tu ramasser le masque ?(oui/non)'
+
+    }else if (this.count === 53) {
+        this.game.img = 'metropole/mask2.gif'
+        this.game.txt = '. . . Merci.'
+
+    }else if (this.count === 54) {
+        this.game.img = 'metropole/cat7.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 55) {
+        this.game.img = 'metropole/cat8.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 56) {
+        this.game.img = 'metropole/cat.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 57) {
+        this.game.img = 'metropole/casier.png'
+        this.game.txt = '. . .'
+
+    }else if (this.count === 58) {
+          this.game.img = 'metropole/look.gif'
+          this.game.txt = '. . .'
+
+    }else if (this.count === 59) {
+          this.game.img = 'metropole/clé.png'
+          this.game.txt = '. . .'
+
+    }else if (this.count === 60) {
+          this.game.img = 'metropole/clé2.png'
+          this.game.txt = '. . .'
+
 
 
 
@@ -210,7 +298,7 @@ methods: {
 </script>
 <style lang="scss">
 .vue-typer {
-  
+
 }
 
 .vue-typer .custom.char {
