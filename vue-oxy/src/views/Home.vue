@@ -73,6 +73,8 @@ methods: {
       this.game.img = 'archives/bougie.png'
       this.game.txt = 'Allume la bougie.'
       this.game.music = 'feu'
+
+//frame 2 : music : 05 Memory (Ib OST)
     } else if (this.count === 2) {
       this.game.img = 'archives/bougie-a.png'
       this.game.txt = '. . .'
@@ -153,17 +155,17 @@ methods: {
 
 
     } else if (this.count === 22) {
-        this.game.img = 'archives/DOORGIF.gif'
+        this.game.img = 'archives/porte.png'
         this.game.txt = 'Ouvrir la porte?'
 
-
+//frame 23 music : Fullmetal Alchemist Brotherhood OST 3 - Sorrowful Stone
     } else if (this.count === 23) {
         this.game.img = 'nature/1-chemin.png'
         this.game.txt = 'Vous êtes sorti dehors.'
 
     } else if (this.count === 24) {
         this.game.img = 'nature/1.gif'
-        this.game.txt = 'La lumière est si dense dehors.'
+        this.game.txt = 'La lumière est si dense ici.'
 
     }else if (this.count === 25) {
         this.game.img = 'nature/herb-and-trees.gif'
@@ -191,13 +193,14 @@ methods: {
 
     }else if (this.count === 31) {
         this.game.img = 'nature/the-tree-2.png'
-        this.game.txt = '*cueillir ?*'
+        this.game.txt = 'cueillir ?'
 
     }else if (this.count === 32) {
         this.game.img = 'nature/the-tree-3.png'
         this.game.txt = 'Garde le précieusement. \nCe fruit n’est pas comme les autres.'
 
 
+//frame 33 music : Fukasawa Hideyuki (深澤秀行) - Nakamura Sawa no Kyoukan (仲村佐和の叫喚)
     }else if (this.count === 33) {
         this.game.img = 'nature/rain.png'
         this.game.txt = '. . . Il semblerait que la nuit commence à tomber.'
@@ -253,11 +256,11 @@ methods: {
 
     }else if (this.count === 46) {
         this.game.img = 'metropole/void3.gif'
-        this.game.txt = 'Tant d’humains concentrés dans un espace si réduit. \nTous les jours se ressemblent. \nToutes les semaines la même routine. \nOn perd notre vie à la gagner. \nCette spirale infernale, la pyramide sociale. \nIci, c’est de pire en pire. \nUn monde tombé dans l’indécence, plein de questions sans réponses.'
+        this.game.txt = 'Tant d’humains concentrés dans un espace si réduit. \n Une masse d’invidivus. Morts et vivants. \n Les jours se répètent. \nToutes les semaines la même boucle. \nOn perd notre vie à la gagner. \nCette spirale infernale, la pyramide sociale. \nIci, c’est de pire en pire. \nComment arrêter le temps ?'
 
     }else if (this.count === 47) {
         this.game.img = 'metropole/void4.gif'
-        this.game.txt = 'Comment arrêter le temps ?'
+        this.game.txt = 'Un monde tombé dans l’indécence, pleins de questions sans réponses.'
 
     }else if (this.count === 48) {
         this.game.img = 'metropole/void44.gif'
@@ -273,7 +276,7 @@ methods: {
 
     }else if (this.count === 51) {
         this.game.img = 'metropole/cat5.png'
-        this.game.txt = 'Pourquoi... Acceptons-nous juste les choses ?'
+        this.game.txt = 'Pourquoi . . . Acceptons-nous juste les choses ?'
 
     }else if (this.count === 52) {
         this.game.img = 'metropole/antenna.png'
@@ -288,7 +291,7 @@ methods: {
         this.game.txt = '. . . Merci.'
 
     }else if (this.count === 55) {
-        this.game.img = 'metropole/cat7.png'
+        this.game.img = 'metropole/cat7.gif'
         this.game.txt = '. . .'
 
     }else if (this.count === 56) {
@@ -305,7 +308,7 @@ methods: {
 
     }else if (this.count === 59) {
           this.game.img = 'metropole/look.gif'
-          this.game.txt = 'Prends ton temps.'
+          this.game.txt = 'Prends ton temps. \n De regarder autour de toi.'
 
     }else if (this.count === 60) {
           this.game.img = 'metropole/clé.png'
@@ -319,7 +322,7 @@ methods: {
           this.game.img = 'metropole/the-end-mothefucka.gif'
           this.game.txt = '. . . entre.'
 
-
+//music end : Jigoku Shoujo - Ost - Kumo To Rouba To Shoujo
 
 
           }else {
