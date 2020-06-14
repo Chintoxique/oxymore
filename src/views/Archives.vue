@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white min-h-screen">
+  <div class=" min-h-screen">
     <div class="bg-white w-full masonry-with-columns gap-4 p-4">
-      <div v-for="archive in archives" :key="archive" class="border-2 border-black text-black p-2">
+      <div v-for="archive in archives" :key="archive" class="border-2 border-black text-black p-2 bg-white">
         <p v-html="archive"></p>
       </div>
     </div>
@@ -194,7 +194,7 @@
                 "Arrêt Conscience 66",
                 "Soyez conscient de vos actes, de ce que vous dites, de ce que vous faites.",
                 "music : 05 Memory (Ib OST)<br>Fullmetal Alchemist Brotherhood OST 3 - Sorrowful Stone<br>Fukasawa Hideyuki (深澤秀行) - Nakamura Sawa no Kyoukan (仲村佐和の叫喚)<br>Jigoku Shoujo - Ost - Kumo To Rouba To Shoujo",
-                
+
 
 
                 "De l'ombre à la lumière...",

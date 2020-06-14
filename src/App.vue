@@ -4,8 +4,9 @@
       <router-link to="/">Oxymore</router-link> /
       <router-link to="/archives">Archives</router-link>
     </div>
-
-    <router-view/>
+    <vue-page-transition name="fade">
+      <router-view/>
+    </vue-page-transition>
 
 
 
