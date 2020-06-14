@@ -1,17 +1,32 @@
 <template>
   <div class="home">
-    <div class="p-5">
+    <div class="absolute top-0 right-0 m-10 ">
+      <img v-if="hana === true" class="inline-block m-1" :src="require('../assets/hana.png')" alt="">
+      <img v-if="hana === false" class="inline-block m-1" :src="require('../assets/empty.png')" alt="">
+      <img v-if="mask === true" class="inline-block m-1" :src="require('../assets/mask.png')" alt="">
+      <img v-if="mask === false" class="inline-block m-1" :src="require('../assets/empty.png')" alt=""> <br>
+      <img v-if="key === true" class="inline-block m-1" :src="require('../assets/key.png')" alt="">
+      <img v-if="key === false" class="inline-block m-1" :src="require('../assets/empty.png')" alt="">
+      <img class="inline-block m-1" :src="require('../assets/empty.png')" alt="">
+    </div>
+    <div v-bind:class="{ hidden: ending }"  class="p-5">
       <img :src="require('../assets/'+game.img)" class="mx-auto w-8/12" alt="">
     </div>
-    <div class="text-center py-3 w-8/12 mx-auto" style="border:solid 1px white;">
+    <div v-bind:class="{ hidden: ending }" class="text-center py-3 w-8/12 mx-auto" style="border:solid 1px white;">
       <div @click="clicker" class="w-full h-full px-2 cursor-pointer pb-2">
         <vue-typer class="" :text="game.txt" :repeat='0' :type-delay='100'></vue-typer>
       </div>
-      <p class="inline-block border-black border-l-2 px-3 mx-2 hover:border-white cursor-pointer" @click="goto(23)" v-if="count === 22">OUI</p> <br>
-      <p class="inline-block border-black border-l-2 px-3 mx-2 hover:border-white cursor-pointer" @click="goto(33)" v-if="count === 22">NON</p>
+      <p class="inline-block border-black border-l-2 px-3 mx-2 hover:border-white cursor-pointer" @click="goto(22)" v-if="count === 21">OUI</p> <br>
+      <p class="inline-block border-black border-l-2 px-3 mx-2 hover:border-white cursor-pointer" @click="goto(33)" v-if="count === 21">NON</p>
       <p class="inline-block border-black border-l-2 px-3 mx-2 hover:border-white cursor-pointer" @click="goto(32)" v-if="count === 31">OUI</p>
       <p class="inline-block border-black border-l-2 px-3 mx-2 hover:border-white cursor-pointer" @click="goto(54)" v-if="count === 53">OUI</p>
       <p class="inline-block border-black border-l-2 px-3 mx-2 hover:border-white cursor-pointer" @click="goto(61)" v-if="count === 60">OUI</p>
+    </div>
+    <div class="p-5" v-if="ending === true" >
+      <img @click="lock = true" :src="require('../assets/flame.gif')" class="mx-auto w-5/12" alt="">
+    </div>
+    <div class=" text-center" v-if="ending === true">
+      <input class="bg-black text-white text-2xl border-2 border-white text-center p-2" type="text" name="" value="" style="width: 7ch">
     </div>
 
       <p class="mt-5 pt-10 pb-4">OPTION :</p>
@@ -44,6 +59,12 @@ data() {
     mask : false,
     key : false,
     count : 1,
+    memory : new Audio(require('../assets/mu/memory.mp3')),
+    sorrowful : new Audio(require('../assets/mu/sorrowful.mp3')),
+    nakamura : new Audio(require('../assets/mu/nakamura.mp3')),
+    kumo : new Audio(require('../assets/mu/kumo.mp3')),
+    ending : false,
+    lock : false,
   }
 },
 methods: {
@@ -69,10 +90,10 @@ methods: {
     this.refresh()
   },
   refresh() {
-    const memory = new Audio(require('../assets/mu/memory.mp3'));
-    const sorrowful = new Audio(require('../assets/mu/sorrowful.mp3'));
-    const nakamura = new Audio(require('../assets/mu/nakamura.mp3'));
-    const kumo = new Audio(require('../assets/mu/kumo.mp3'));
+    //const memory = new Audio(require('../assets/mu/memory.mp3'));
+    // const sorrowful = new Audio(require('../assets/mu/sorrowful.mp3'));
+    // const nakamura = new Audio(require('../assets/mu/nakamura.mp3'));
+    // const kumo = new Audio(require('../assets/mu/kumo.mp3'));
     if (this.count === 1) {
       this.game.img = 'archives/bougie.png'
       this.game.txt = 'Allume la bougie.'
@@ -80,7 +101,7 @@ methods: {
 
 //frame 2 : music : 05 Memory (Ib OST)
     } else if (this.count === 2) {
-      memory.play();
+      this.memory.play()
       this.game.img = 'archives/bougie-a.png'
       this.game.txt = '. . .'
     } else if (this.count === 3) {
@@ -155,15 +176,11 @@ methods: {
 
 
     } else if (this.count === 21) {
-<<<<<<< HEAD
+        this.memory.pause()
+        // memory.pause();
+        // memory.currentTime = 0;
         this.game.img = 'archives/porte.png'
         this.game.txt = 'Ouvrir la porte ?'
-
-=======
-        this.game.img = 'archives/DOORGIF2.gif'
-        this.game.txt = 'Devant vous, se tient une porte.'
-        memory.pause();
->>>>>>> 6d3e0df35b7bfce5b6663a331c4b1f564703c13b
 
     } else if (this.count === 22) {
         this.game.img = 'archives/open-door.gif'
@@ -171,7 +188,7 @@ methods: {
 
 //frame 23 music : Fullmetal Alchemist Brotherhood OST 3 - Sorrowful Stone
     } else if (this.count === 23) {
-        sorrowful.play();
+        this.sorrowful.play();
         this.game.img = 'nature/1-chemin.png'
         this.game.txt = 'Vous êtes sorti dehors.'
 
@@ -208,14 +225,14 @@ methods: {
         this.game.txt = 'cueillir ?'
 
     }else if (this.count === 32) {
-        sorrowful.pause();
+        this.sorrowful.pause();
         this.game.img = 'nature/the-tree-3.png'
         this.game.txt = 'Garde le précieusement. \nCe fruit n’est pas comme les autres.'
 
 
 //frame 33 music : Fukasawa Hideyuki (深澤秀行) - Nakamura Sawa no Kyoukan (仲村佐和の叫喚)
     }else if (this.count === 33) {
-        nakamura.play()
+        this.nakamura.play()
         this.game.img = 'nature/rain.png'
         this.game.txt = '. . . Il semblerait que la nuit commence à tomber.'
 
@@ -333,21 +350,23 @@ methods: {
           this.game.txt = '. . .'
 
     }else if (this.count === 62) {
-          nakamura.pause()
+          this.nakamura.pause()
           this.game.img = 'metropole/the-end-mothefucka.gif'
           this.game.txt = '. . . entre.'
 
 //music end : Jigoku Shoujo - Ost - Kumo To Rouba To Shoujo
 
 
-          }else {
-        kumo.play()
-        this.game.img = 'logo.png'
-        this.game.txt = 'END'
+    } else if (this.count === 63) {
+        this.kumo.play()
+        this.game.img = 'flame.gif'
+        this.ending = true
+    } else {
+      //this.count = 1
     }
-  }
 }
-};
+},
+}
 </script>
 <style lang="scss">
 .vue-typer {
