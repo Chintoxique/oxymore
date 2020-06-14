@@ -193,7 +193,8 @@
                 "Mais tout au fond de nous, nous savons, se trouve un coeur.<br>Le processeur actif rouge merveille saignant, sensible au monde extérieur et aussi précieux qu’un rubis.",
                 "Arrêt Conscience 66",
                 "Soyez conscient de vos actes, de ce que vous dites, de ce que vous faites.",
-
+                "music : 05 Memory (Ib OST)<br>Fullmetal Alchemist Brotherhood OST 3 - Sorrowful Stone<br>Fukasawa Hideyuki (深澤秀行) - Nakamura Sawa no Kyoukan (仲村佐和の叫喚)<br>Jigoku Shoujo - Ost - Kumo To Rouba To Shoujo",
+                
 
 
                 "De l'ombre à la lumière...",
