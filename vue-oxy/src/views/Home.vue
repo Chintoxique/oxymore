@@ -67,7 +67,8 @@ data() {
     soundPorte : new Audio(require('../assets/mu/sound/porte.wav')),
     soundFruit : new Audio(require('../assets/mu/sound/fruit.wav')),
     soundFire : new Audio(require('../assets/mu/sound/fire.wav')),
-
+    soundTapis : new Audio(require('../assets/mu/sound/hhh.wav')),
+    soundFlame : new Audio(require('../assets/mu/sound/Chill7.wav')),
     ending : false,
     lock : false,
     psw: "",
@@ -132,7 +133,7 @@ methods: {
       this.game.music = 'violence'
     } else if (this.count === 7) {
       this.game.img = 'archives/78.png'
-      this.game.txt = 'La perception des choses qui nous entoure \net de la valeur de ceux-ci...'
+      this.game.txt = 'La perception des choses qui nous entoure'
     } else if (this.count === 8) {
       this.game.img = 'archives/88.png'
       this.game.txt = "De l’infiniment petit"
@@ -175,6 +176,7 @@ methods: {
 
 
     } else if (this.count === 18) {
+        this.soundTapis.play()
         this.game.img = 'archives/AH.png'
         this.game.txt = 'Ah.'
 
@@ -376,6 +378,7 @@ methods: {
 
     } else if (this.count === 63) {
         this.kumo.play()
+        this.soundFlame.play()
         this.game.img = 'flame.gif'
         this.ending = true
     } else {
