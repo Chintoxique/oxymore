@@ -26,7 +26,7 @@
       <img @click="lock = true" :src="require('../assets/flame.gif')" class="mx-auto w-5/12" alt="">
     </div>
     <div class=" text-center" v-if="ending === true">
-      <input class="bg-black text-white text-2xl border-2 border-white text-center p-2" type="text" name="" value="" style="width: 7ch">
+      <input v-model="psw" v-on:keyup="checkPSW" class="bg-black text-white text-2xl border-2 border-white text-center p-2" type="text" name="" value="" style="width: 7ch">
     </div>
 
       <p class="mt-5 pt-10 pb-4">OPTION :</p>
@@ -39,6 +39,7 @@
 <script>
 // @ is an alias to /src
 //import HelloWorld from "@/components/HelloWorld.vue";
+import router from "@/router";
 
 export default {
   name: "Home",
@@ -63,11 +64,21 @@ data() {
     sorrowful : new Audio(require('../assets/mu/sorrowful.mp3')),
     nakamura : new Audio(require('../assets/mu/nakamura.mp3')),
     kumo : new Audio(require('../assets/mu/kumo.mp3')),
+    soundPorte : new Audio(require('../assets/mu/sound/porte.wav')),
+    soundFruit : new Audio(require('../assets/mu/sound/fruit.wav')),
+    soundFire : new Audio(require('../assets/mu/sound/fire.wav')),
+
     ending : false,
     lock : false,
+    psw: "",
   }
 },
 methods: {
+  checkPSW() {
+    if (this.psw === "VOID") {
+       router.push('Archives')
+    }
+  },
   clicker() {
     this.count ++
     this.refresh()
@@ -101,6 +112,7 @@ methods: {
 
 //frame 2 : music : 05 Memory (Ib OST)
     } else if (this.count === 2) {
+      this.soundFire.play()
       this.memory.play()
       this.game.img = 'archives/bougie-a.png'
       this.game.txt = '. . .'
@@ -176,13 +188,14 @@ methods: {
 
 
     } else if (this.count === 21) {
-        this.memory.pause()
         // memory.pause();
         // memory.currentTime = 0;
         this.game.img = 'archives/porte.png'
         this.game.txt = 'Ouvrir la porte ?'
 
     } else if (this.count === 22) {
+        this.memory.pause()
+        this.soundPorte.play()
         this.game.img = 'archives/open-door.gif'
         this.game.txt = '...'
 
@@ -225,6 +238,7 @@ methods: {
         this.game.txt = 'cueillir ?'
 
     }else if (this.count === 32) {
+        this.soundFruit.play()
         this.sorrowful.pause();
         this.game.img = 'nature/the-tree-3.png'
         this.game.txt = 'Garde le précieusement. \nCe fruit n’est pas comme les autres.'
@@ -232,6 +246,7 @@ methods: {
 
 //frame 33 music : Fukasawa Hideyuki (深澤秀行) - Nakamura Sawa no Kyoukan (仲村佐和の叫喚)
     }else if (this.count === 33) {
+        this.memory.pause()
         this.nakamura.play()
         this.game.img = 'nature/rain.png'
         this.game.txt = '. . . Il semblerait que la nuit commence à tomber.'
@@ -287,7 +302,7 @@ methods: {
 
     }else if (this.count === 46) {
         this.game.img = 'metropole/void3.gif'
-        this.game.txt = 'Tant d’humains concentrés dans un espace si réduit. \n Une masse d’invidivus. Morts et vivants. \n Les jours se répètent. \nToutes les semaines la même boucle. \nOn perd notre vie à la gagner. \nCette spirale infernale, la pyramide sociale. \nIci, c’est de pire en pire. \nComment arrêter le temps ?'
+        this.game.txt = 'Tant d’humains concentrés dans un espace si réduit. \n Une masse d’invidivus. Morts et vivants. \n Les jours se répètent. \nToutes les semaines la même boucle. \nOn perd notre vie à la gagner. \nCette spirale infernale. La pyramide sociale. \nIci, c’est de pire en pire. \nComment arrêter le temps ?'
 
     }else if (this.count === 47) {
         this.game.img = 'metropole/void4.gif'
@@ -318,6 +333,7 @@ methods: {
         this.game.txt = 'Veux-tu ramasser le masque ?'
 
     }else if (this.count === 54) {
+        this.soundFruit.play()
         this.game.img = 'metropole/mask2.gif'
         this.game.txt = '. . . Merci.'
 
@@ -346,6 +362,7 @@ methods: {
           this.game.txt = '*prendre la clé*'
 
     }else if (this.count === 61) {
+          this.soundFruit.play()
           this.game.img = 'metropole/clé2.png'
           this.game.txt = '. . .'
 
