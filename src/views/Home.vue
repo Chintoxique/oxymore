@@ -84,7 +84,7 @@ methods: {
     } else if (this.count === 60) {
       this.key = true
     } else {
-      console.log("-- --- .-. - (22)")
+      //console.log("-- --- .-. - (22)")
     }
     this.count = x
     this.refresh()
