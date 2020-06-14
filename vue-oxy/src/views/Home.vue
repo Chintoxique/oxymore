@@ -150,13 +150,13 @@ methods: {
 
 
     } else if (this.count === 21) {
-        this.game.img = 'archives/DOORGIF2.gif'
-        this.game.txt = 'Devant vous, se tient une porte.'
+        this.game.img = 'archives/porte.png'
+        this.game.txt = 'Ouvrir la porte ?'
 
 
     } else if (this.count === 22) {
-        this.game.img = 'archives/porte.png'
-        this.game.txt = 'Ouvrir la porte?'
+        this.game.img = 'archives/open-door.gif'
+        this.game.txt = '...'
 
 //frame 23 music : Fullmetal Alchemist Brotherhood OST 3 - Sorrowful Stone
     } else if (this.count === 23) {
