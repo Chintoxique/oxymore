@@ -5,7 +5,14 @@
       <img v-if="hana === false" class="inline-block m-1" :src="require('../assets/empty.png')" alt="">
       <img v-if="mask === true" class="inline-block m-1" :src="require('../assets/mask.png')" alt="">
       <img v-if="mask === false" class="inline-block m-1" :src="require('../assets/empty.png')" alt=""> <br>
-      <img v-if="key === true" class="inline-block m-1" :src="require('../assets/key.png')" alt="">
+      <img ref="btnRef" v-on:mouseenter="toggleTooltip()" v-on:mouseleave="toggleTooltip()" v-if="key === true" class="inline-block m-1" :src="require('../assets/key.png')" alt="">
+      <div ref="tooltipRef" v-bind:class="{'hidden': !tooltipShow, 'block': tooltipShow}" class=" border-0 mr-3 block z-50 font-normal leading-normal text-sm max-w-xs text-left no-underline break-words">
+        <div>
+          <div class=" text-white opacity-75 font-semibold p-3 mb-0 uppercase">
+            VOID
+          </div>
+        </div>
+      </div>
       <img v-if="key === false" class="inline-block m-1" :src="require('../assets/empty.png')" alt="">
       <img class="inline-block m-1" :src="require('../assets/empty.png')" alt="">
     </div>
@@ -29,9 +36,9 @@
       <input v-model="psw" v-on:keyup="checkPSW" class="bg-black text-white text-2xl border-2 border-white text-center p-2" type="text" name="" value="" style="width: 7ch">
     </div>
 
-      <p class="mt-5 pt-10 pb-4">OPTION :</p>
+      <!-- <p class="mt-5 pt-10 pb-4">OPTION :</p>
       <p class="inline-block cursor-pointer" @click="backclicker">back</p>
-      <input class="text-white bg-black float-right" v-model="count" type="text" name="" value="" style="width:5ch">
+      <input class="text-white bg-black float-right" v-model="count" type="text" name="" value="" style="width:5ch"> -->
 
   </div>
 </template>
@@ -40,6 +47,7 @@
 // @ is an alias to /src
 //import HelloWorld from "@/components/HelloWorld.vue";
 import router from "@/router";
+import Popper from "popper.js";
 
 export default {
   name: "Home",
@@ -67,13 +75,25 @@ data() {
     soundPorte : new Audio(require('../assets/mu/sound/porte.wav')),
     soundFruit : new Audio(require('../assets/mu/sound/fruit.wav')),
     soundFire : new Audio(require('../assets/mu/sound/fire.wav')),
-
+    soundTapis : new Audio(require('../assets/mu/sound/hhh.wav')),
+    soundFlame : new Audio(require('../assets/mu/sound/Chill7.wav')),
     ending : false,
     lock : false,
     psw: "",
+    tooltipShow: false,
   }
 },
 methods: {
+  toggleTooltip: function(){
+    if(this.tooltipShow){
+      this.tooltipShow = false;
+    } else {
+      this.tooltipShow = true;
+      new Popper(this.$refs.btnRef, this.$refs.tooltipRef, {
+        placement: "left"
+      });
+    }
+  },
   checkPSW() {
     if (this.psw === "VOID") {
        router.push('Archives')
@@ -132,7 +152,7 @@ methods: {
       this.game.music = 'violence'
     } else if (this.count === 7) {
       this.game.img = 'archives/78.png'
-      this.game.txt = 'La perception des choses qui nous entoure \net de la valeur de ceux-ci...'
+      this.game.txt = 'La perception des choses qui nous entoure'
     } else if (this.count === 8) {
       this.game.img = 'archives/88.png'
       this.game.txt = "De l’infiniment petit"
@@ -175,6 +195,7 @@ methods: {
 
 
     } else if (this.count === 18) {
+        this.soundTapis.play()
         this.game.img = 'archives/AH.png'
         this.game.txt = 'Ah.'
 
@@ -376,6 +397,8 @@ methods: {
 
     } else if (this.count === 63) {
         this.kumo.play()
+        this.kumo.loop = true
+        this.soundFlame.play()
         this.game.img = 'flame.gif'
         this.ending = true
     } else {

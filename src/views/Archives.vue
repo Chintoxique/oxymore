@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white min-h-screen">
+  <div class=" min-h-screen">
     <div class="bg-white w-full masonry-with-columns gap-4 p-4">
-      <div v-for="archive in archives" :key="archive" class="border-2 border-black text-black p-2">
+      <div v-for="archive in archives" :key="archive" class="border-2 border-black text-black p-2 bg-white">
         <p v-html="archive"></p>
       </div>
     </div>
