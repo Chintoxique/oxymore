@@ -194,7 +194,7 @@
                 "Arrêt Conscience 66",
                 "Soyez conscient de vos actes, de ce que vous dites, de ce que vous faites.",
                 "music : 05 Memory (Ib OST)<br>Fullmetal Alchemist Brotherhood OST 3 - Sorrowful Stone<br>Fukasawa Hideyuki (深澤秀行) - Nakamura Sawa no Kyoukan (仲村佐和の叫喚)<br>Jigoku Shoujo - Ost - Kumo To Rouba To Shoujo",
-                
+
 
 
                 "De l'ombre à la lumière...",
@@ -211,6 +211,9 @@
     }
 </script>
 <style lang="scss">
+html {
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='47' height='56' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>Φ</text></svg>") 16 0,auto;
+}
 .masonry-with-columns {
 columns: 3 200px;
 column-gap: 1rem;
