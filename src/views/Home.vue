@@ -6,9 +6,9 @@
       <img v-if="mask === true" class="inline-block m-1" :src="require('../assets/mask.png')" alt="">
       <img v-if="mask === false" class="inline-block m-1" :src="require('../assets/empty.png')" alt=""> <br>
       <img ref="btnRef" v-on:mouseenter="toggleTooltip()" v-on:mouseleave="toggleTooltip()" v-if="key === true" class="inline-block m-1" :src="require('../assets/key.png')" alt="">
-      <div ref="tooltipRef" v-bind:class="{'hidden': !tooltipShow, 'block': tooltipShow}" class="bg-gray-800 border-0 mr-3 block z-50 font-normal leading-normal text-sm max-w-xs text-left no-underline break-words rounded-lg">
+      <div ref="tooltipRef" v-bind:class="{'hidden': !tooltipShow, 'block': tooltipShow}" class=" border-0 mr-3 block z-50 font-normal leading-normal text-sm max-w-xs text-left no-underline break-words">
         <div>
-          <div class="bg-gray-800 text-white opacity-75 font-semibold p-3 mb-0 uppercase rounded-lg">
+          <div class=" text-white opacity-75 font-semibold p-3 mb-0 uppercase">
             VOID
           </div>
         </div>
