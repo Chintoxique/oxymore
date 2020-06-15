@@ -232,7 +232,7 @@ methods: {
 
     }else if (this.count === 25) {
         this.game.img = 'nature/herb-and-trees.gif'
-        this.game.txt = 'L’atmosphère est si douce,'
+        this.game.txt = 'L’atmosphère est douce,'
 
     }else if (this.count === 26) {
         this.game.img = 'nature/rainbow.gif'
@@ -376,7 +376,7 @@ methods: {
 
     }else if (this.count === 59) {
           this.game.img = 'metropole/look.gif'
-          this.game.txt = 'Prends ton temps. \n De regarder autour de toi.'
+          this.game.txt = 'Regarde autour de toi.'
 
     }else if (this.count === 60) {
           this.game.img = 'metropole/clé.png'

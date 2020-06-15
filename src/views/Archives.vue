@@ -192,6 +192,7 @@
                 "Êtres humains, ces systèmes biologiques dotés d’une conscience, d’un sens émotionnel. Leurs cerveaux réduits à des écrans imagés ne se rendent pas compte de la complexité de leur mécanisme. Bien trop souvent manipulés par ces Géants qui tirent les ficelles, la société nous rend aussi dociles et froids qu’une machine métallique inerte.",
                 "Mais tout au fond de nous, nous savons, se trouve un coeur.<br>Le processeur actif rouge merveille saignant, sensible au monde extérieur et aussi précieux qu’un rubis.",
                 "Arrêt Conscience 66",
+                "Principe d’équivalence.",
                 "Soyez conscient de vos actes, de ce que vous dites, de ce que vous faites.",
                 "music : 05 Memory (Ib OST)<br>Fullmetal Alchemist Brotherhood OST 3 - Sorrowful Stone<br>Fukasawa Hideyuki (深澤秀行) - Nakamura Sawa no Kyoukan (仲村佐和の叫喚)<br>Jigoku Shoujo - Ost - Kumo To Rouba To Shoujo",
 
