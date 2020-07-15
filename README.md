@@ -4,11 +4,11 @@
 > Allume la bougie ...
 
 
-Le jeu est disponible en ligne ici : [Oxymore](https://hungry-swirles-f31e6c.netlify.app/) 
+Le jeu est disponible en ligne ici : [[ **Oxymore** ]](https://hungry-swirles-f31e6c.netlify.app/) 
 
 ---
 
-Afin de lancer le jeu localement, installez [NodeJS](https://nodejs.org/en/)
+Afin de lancer le jeu localement, installez [[ **ONodeJS** ]](https://nodejs.org/en/)
 
 Une fois le *repositary* téléchargé lancez cette commande sur votre terminal
 
@@ -22,4 +22,4 @@ Pour lancer le serveur en mode de développement
 npm run watch
 ```
 
-Projet construit avec [VueJS](https://vuejs.org/)
+Projet construit avec [[ **VueJS** ]](https://vuejs.org/)
