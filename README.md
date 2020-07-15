@@ -1,10 +1,10 @@
-![bougie](src/assets/hana.png)
+![](src/assets/hana.png)
 ### Oxymore
 
 > Allume la bougie ...
 
 
-Le jeu est disponible en ligne ici : [Oxymore](hhttps://hungry-swirles-f31e6c.netlify.app/) 
+Le jeu est disponible en ligne ici : [Oxymore](https://hungry-swirles-f31e6c.netlify.app/) 
 
 ---
 
