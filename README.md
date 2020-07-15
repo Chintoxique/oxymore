@@ -1,3 +1,4 @@
+![bougie](src/assets/hana.png)
 ### Oxymore
 
 > Allume la bougie ...
