@@ -8,7 +8,7 @@ Le jeu est disponible en ligne ici : [[ **Oxymore** ]](https://hungry-swirles-f3
 
 ---
 
-Afin de lancer le jeu localement, installez [[ **ONodeJS** ]](https://nodejs.org/en/)
+Afin de lancer le jeu localement, installez [[ **NodeJS** ]](https://nodejs.org/en/)
 
 Une fois le *repositary* téléchargé lancez cette commande sur votre terminal
 
