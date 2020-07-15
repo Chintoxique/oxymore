@@ -1,24 +1,24 @@
-# vue-app
+### Oxymore
 
-## Project setup
+> Allume la bougie ...
+
+
+Le jeu est disponible en ligne ici : [Oxymore](hhttps://hungry-swirles-f31e6c.netlify.app/) 
+
+---
+
+Afin de lancer le jeu localement, installez [NodeJS](https://nodejs.org/en/)
+
+Une fois le *repositary* téléchargé lancez cette commande sur votre terminal
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Pour lancer le serveur en mode de développement 
+
 ```
-npm run serve
+npm run watch
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Projet construit avec [VueJS](https://vuejs.org/)
